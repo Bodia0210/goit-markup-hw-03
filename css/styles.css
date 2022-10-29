@@ -5,6 +5,16 @@
   --background-color:#ffffff;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .body {
 font-family: "Roboto", sans-serif;
 font-size: 14px;
@@ -24,9 +34,36 @@ a:focus {
 ul {
   list-style: none;
 }
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+h1, h2, h3, h4,h5, h6, p, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* logo-heder */
 
+.page-header {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  background-color: var(--background-color);
+  border-bottom: 1px solid #ECECEC;;
+}
+
 .logo-heder {
+  margin-top: 24px;
+  margin-left: 215px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -40,7 +77,12 @@ ul {
 
 /* navimenu */
 
+
+
 .site-nav {
+  margin-top: 32px;
+  margin-left: 93px;
+  display: flex;
   font-family: "Roboto";
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -51,19 +93,34 @@ ul {
   color: #2196f3;
 }
 
+.site-nav .item:not(last-child) {margin-right: 50px;}
+
+.site-nav .item {
+  display: block;
+}
+
 .contacts {
+  margin-top: 32px;
+  margin-right: 50px;
   color: var(--second-color);
 }
+
 
 /* hero */
 
 .hero {
+  width: 1600px;
+  height: 600px;
+  text-align: center;
   background-color: #2f303a;
 }
 
 .hero-title {
+  padding-top: 200px;
+  max-width: 696px;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 452px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -73,6 +130,7 @@ ul {
 }
 
 .hero-button {
+  margin-top: 30px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -82,6 +140,17 @@ ul {
 }
 
 /* fetures */
+
+.fetures {
+  width: 1170px;
+  height: 98px;
+}
+
+.features-menu {
+  display: flex;
+  margin-left: 215px;
+  margin-right: 30px;
+}
 
 .fetures-title {
   font-weight: 700;
@@ -99,7 +168,16 @@ ul {
 
 /* activity */
 
+.activity {
+  margin-top: 94px;
+  margin-left: 215px;
+  width: 1170px;
+  height: 386px;
+  text-align: center;
+}
+
 .activity-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -109,7 +187,29 @@ ul {
 
 /* our team */
 
+.our-team {
+  margin-top: 94px;
+  margin-left: 215px;
+  justify-content: center;
+  text-align: center;
+}
+
+.team-icone li {
+  outline: 1px solid;}
+
+.team-icone {
+  
+  display: flex;
+  margin-top: 50px;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+..team-icone:not()
+
 .team {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -135,11 +235,15 @@ ul {
 
 /* footer */
 
-footer {
+.footer-line {
+  width: 1600px;
+  height: 252px;
   background-color: #2f303a;
 }
 
 .logo-footer {
+  margin-top: 60px;
+  margin-left: 215px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -153,6 +257,11 @@ footer {
   color: #ffffff;
 }
 
+.footer-addres {
+  margin-left: 215px;
+  margin-top: 20px;
+}
+
 .address {
   font-weight: 400;
   line-height: calc(24 / 14);
@@ -161,6 +270,7 @@ footer {
 }
 
 .footer-contacts {
+  display: block;
   font-weight: 400;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -169,7 +279,19 @@ footer {
 
 /* portfolio page */
 
+.filter {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  min-width: 575px;
+  margin-bottom: 34px;
+}
+.filr-button:not(last-child) {
+  margin-right: 8px;
+}
+
 .filr-button {
+display: inline-block;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -183,6 +305,14 @@ footer {
   color: #ffffff;
 }
 
+.icon-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+.icon-menu:nth-child(3n) {margin-right: 0px;}
+
+
 .projeck-name {
   font-weight: 700;
   font-size: 18px;
@@ -192,9 +322,19 @@ footer {
 }
 
 .project-type {
+
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-  color: var(--second-color);
-}
+  color: var(--second-color);}
+
+
+
+  .icon-menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .icon-menu li {
+    outline: 1px solid;
+  }
