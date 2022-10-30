@@ -23,8 +23,7 @@ html {
 
 a {
   text-decoration: none;
-  color: var(--main-color);
-}
+  }
 
 a:hover,
 a:focus {
@@ -94,10 +93,18 @@ button {
   align-items: center;
 }
 
+.site-nav .item {
+  color: #212121;
+}
+.item-one {color: #2196f3;}
+.site-nav .item:hover,
+.site-nav .item:focus{
+color: #2196f3;
+}
+
 .site-nav {
   margin-left: 93px;
   display: flex;
-  font-family: "Roboto";
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -120,8 +127,9 @@ button {
 
 .contacts {
   color: var(--second-color);
+  margin-right: 50px;
 }
-
+.contacts :last-child{ margin-right: 0;}
 .contacts + .contacts {
   margin-left: 50px;
 }
@@ -206,7 +214,7 @@ button {
 /* activity */
 
 .activity {
-  margin-top: 94px;
+  padding-bottom: 94px;
 }
 
 .activity-title {
@@ -235,8 +243,10 @@ button {
 /* our team */
 
 .our-team {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
+  background-color: #F5F4FA;;
 }
 
 .team {
