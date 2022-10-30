@@ -11,70 +11,75 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" > 
-    <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+
+        <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="body">
-    <header class="page-header">
-      <!-- logo-heder -->
+    <header class="line-header">
+      <div class="container">
+            <!-- logo-heder -->
 
-      <a
-        href="https://bodia0210.github.io/goit-markup-hw-01/"
+      <a href="https://bodia0210.github.io/goit-markup-hw-01/"
         class="logo-heder"
         >Web<span>Studio</span>
       </a>
 
       <!--navimenu-->
 
-      <nav class="navimenu">
+      <nav class="header-nav">
         <ul class="site-nav">
           <li class="item"><a href="#" class="link">Студія</a></li>
-          <li class="item"><a href="#">Контакти</a></li>
           <li class="item"><a href="./portfolio.html">Портфоліо</a></li>
+          <li class="item"><a href="#">Контакти</a></li>
+          
         </ul>
+      
+        <ul class="contact-nav">
+      <li class="item"><a href="mailto:info@devstudio.com " class="contacts"
+        >info@devstudio.com</a></li>
+      <li class="item"><a href="tel:+380961111111" class="contacts">+380961111111</a></li>
+      </ul>
       </nav>
-
-      <a href="mailto:info@devstudio.com " class="contacts"
-        >info@devstudio.com</a
-      >
-      <a href="tel:+380961111111" class="contacts">+380961111111</a>
+      </div>
     </header>
     <main>
       <!--hero-->
 
       <section class="hero">
-        <div class="conteiner">
+        <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero-button">Замовити послугу</button>
-        </div>
+      </div>
       </section>
 
       <!--features-->
 
       <section class="fetures">
         <div class="container">
-        <ul class="features-menu">
-          <li>
+        <ul class="fetures-menu">
+          <li class="fetures-list">
             <h2 class="fetures-title">УВАГА ДО ДЕТАЛЕЙ</h2>
             <p class="fetures-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="fetures-list">
             <h2 class="fetures-title">ПУНКТУАЛЬНІСТЬ</h2>
             <p class="fetures-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
+          <li class="fetures-list">
             <h2 class="fetures-title">ПЛАНУВАННЯ</h2>
             <p class="fetures-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="fetures-list">
             <h2 class="fetures-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
             <p class="fetures-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -82,7 +87,7 @@
             </p>
           </li>
         </ul>
-        </div>  
+        </div>
       </section>
 
       <!--activity-->
@@ -90,9 +95,11 @@
       <section class="activity">
         <div class="container">
         <h2 class="activity-title">Чим займаємося</h2>
-        <img src="images/box1.jpg" alt="printedcod" width="370" />
-        <img src="images/box2.jpg" alt="audit37" width="370" />
-        <img src="images/box3.jpg" alt="graphics design" width="370" />
+        <ul class="icones-title">
+        <li class="activity-icons"><img src="images/box1.jpg" alt="printedcod" width="370" /></li>
+        <li class="activity-icons"><img src="images/box2.jpg" alt="audit37" width="370" /></li>
+        <li class="activity-icons"><img src="images/box3.jpg" alt="graphics design" width="370" /></li>
+      </ul>
       </div>
       </section>
 
@@ -101,52 +108,51 @@
       <section class="our-team">
         <div class="container">
         <h2 class="team">Наша команда</h2>
-        <ul class="team-icone">
+        <ul class="tem-menu">
 
-          <li>
+        <li class="team-list">
           <img src="images/img11.jpg" alt="igor demianenko" width="270" />
-            <h3 class="name">Ігор Дем'яненко</h3>
-            <p class="position">Product Designer</p>
+          <h3 class="name">Ігор Дем'яненко</h3>
+          <p class="position">Product Designer</p>
         </li>
-
-        <li>
-          <img src="images/img12.jpg" alt="olga repina" width="270" />
-            <h3 class="name">Ольга Рєпіна</h3>
-            <p class="position">Frontend Developer</p>
-        </li>
-
-        <li>
-          <img src="images/img21.jpg" alt="mikola tarasov" width="270" />
-            <h3 class="name">Микола Тарасов</h3>
-            <p class="position">Marketing</p>
-          </li>
-
         
-        <li>
-          <img src="images/img31.jpg" alt="mihail_ermackov" width="270" />        
-            <h3 class="name">Михайло Єрмаков</h3>
-            <p class="position">UI Designer</p>         
+        <li class="team-list">
+          <img src="images/img12.jpg" alt="olga repina" width="270" />
+          <h3 class="name">Ольга Рєпіна</h3>
+          <p class="position">Frontend Developer</p>
+                </li>
+        
+        <li class="team-list">
+          <img src="images/img21.jpg" alt="mikola tarasov" width="270" />
+          <h3 class="name">Микола Тарасов</h3>
+          <p class="position">Marketing</p>
+        </li>
 
+        <li class="team-list">
+          <img src="images/img31.jpg" alt="mihail_ermackov" width="270" />
+          <h3 class="name">Михайло Єрмаков</h3>
+          <p class="position">UI Designer</p>
         </li>
         </ul>
         </div>
       </section>
     </main>
 
-    <footer class="footer-line">
+    <footer class="line-footer">
       <div class="container">
-      <a
-        href=" https://bodia0210.github.io/goit-markup-hw-01"
-        class="logo-footer"
-        >Web<span>Studio</span>
-      </a>
-      <address class="footer-addres">
-        <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-        <a href="info@devstudio.com" class="footer-contacts"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="footer-contacts">+380961111111</a>
-      </address>
+      <a href=" https://bodia0210.github.io/goit-markup-hw-01"
+        class="logo-footer">Web<span>Studio</span></a>
+      
+        <address class="footer-adsress">
+        <ul class="footer-nav">
+        <li><p class="address">м. Київ, пр-т Лесі Українки, 26</p></li>
+        <li><a href="info@devstudio.com" class="footer-contacts">
+          info@devstudio.com</a> 
+        </li>
+        <li><a href="tel:+380961111111" class="footer-contacts">+380961111111</a>
+        </li>
+        </ul>
+        </address>
       </div>
     </footer>
   </body>
