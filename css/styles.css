@@ -285,13 +285,18 @@ ul { padding-left: 0;}
 /* footer */
 
 .line-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  height: 252px;
   background-color: #2f303a;
 }
 
+.line-footer .container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .logo-footer {
-  margin-top: 60px;
+  display: flex;
+  padding-top: 60px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
