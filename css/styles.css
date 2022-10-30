@@ -54,19 +54,24 @@ ul { padding-left: 0;}
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 
 .line-header {
-  /* height: 80px; */
-  background-color: var(--background-color);
+  height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+    background-color: var(--background-color);
   border-bottom: 1px solid #ececec;
 }
 
 /* logo-heder */
 
 .logo-heder {
-  /* margin-left: 215px; */
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -83,15 +88,11 @@ ul { padding-left: 0;}
 
 .header-nav {
   display: flex;
-}
-
-.line-header {
-  display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .site-nav {
+  margin-left: 93px;
   display: flex;
   font-family: "Roboto";
   font-weight: 500;
@@ -111,6 +112,7 @@ ul { padding-left: 0;}
 
 .contact-nav {
   display: flex;
+  margin-left: auto;
 }
 
 .contacts {
